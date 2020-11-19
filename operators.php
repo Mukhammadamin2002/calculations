@@ -88,4 +88,84 @@
      return $result; }
     echo "5)";
      echo "Factorial is " . getFactorial(23);
+     echo "<br>";
+
+     #Second Part of hometask 
+
+  //Armstrong Number
+$num = 407;  
+$total = 0;  
+$x=$num;  
+while($x != 0)  
+{  
+$rem = $x % 10;  
+$total = $total + $rem * $rem * $rem;  
+$x = $x / 10;  
+}  
+if($num == $total)  
+{  
+echo "$num is Armstrong number";  
+}  
+else  
+{  
+echo "$num is Not an armstrong number";  
+}  
+echo "<br>";
+echo "<br>";
+#Palindrome 
+function palindrome($n){  
+$number = $n;  
+$sum = 0;  
+while(floor($number)) {  
+$rem = $number % 10;  
+$sum = $sum * 10 + $rem;  
+$number = $number / 10;  
+}  
+return $sum;  
+}  
+$input = 1235321;  
+$num = palindrome($input);  
+if($input == $num) {  
+echo "$input is a Palindrome number";  
+} else {  
+echo "$input is not a Palindrome";  
+}  
+echo "<br>";
+#Fibonacci
+
+$num = 0;  
+$n1 = 0;  
+$n2 = 1;  
+echo "Fibonacci numbers";  
+echo "\n";  
+echo $n1.' '.$n2.' ';  
+while ($num < 10 )   
+{  
+    $n3 = $n2 + $n1;  
+    echo $n3.' ';  
+    $n1 = $n2;  
+    $n2 = $n3;  
+    $num = $num + 1; } 
+
+    echo "<br>";
+
+  //Reverse Number 
+    $num = 456;
+    $revnum = 0;
+    while ($num > 1) {
+      $rem = $num % 10;
+      $revnum = ($revnum * 10) + $rem;
+      $num = ($num / 10);
+    }
+     echo "Reverse number of $num is: $revnum";
+
+    echo "<br>";
+
+  $name = "Hello";
+  echo strrev("$name");
+ 
+  echo "<br>";
+
+  $name1 = "dlrow";
+  echo strrev("$name1");
  ?> 
