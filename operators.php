@@ -83,8 +83,8 @@
 
      	for ($i = 2; $i <= $value; $i++) {
      		$result = $result * $i;
-     }
-    
+       }
+  
      return $result; }
     echo "5)";
      echo "Factorial is " . getFactorial(23);
