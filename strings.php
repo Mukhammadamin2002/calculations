@@ -75,7 +75,9 @@ function password_generate($chars)
 echo password_generate(7)."\n";
 echo "<br>";
 
-
+echo "10) ";
+$str = 'the quick brown fox jumps over the lazy dog';
+echo preg_replace('/the/', 'That', $str) . "\n";
 
 
 ?>
