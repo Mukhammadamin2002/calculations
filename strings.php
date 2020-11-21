@@ -60,7 +60,7 @@ echo substr($str, -3) . "\n";
 
 echo "<br>";
 
-echo "7) ";
+echo "8) ";
 $num1 = 65.45;
 $num2 = 104.35;
 echo sprintf("%1.2f", $num1 + $num2) . "\n";
